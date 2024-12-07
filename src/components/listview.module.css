@@ -1,0 +1,26 @@
+﻿.activeCard {
+    background-color: #0d3c61;
+    &:hover {
+        background-color: AccentColor;
+    }
+}
+
+.inactiveCard {
+    background-color: transparent;
+    &:hover {
+        background-color: grey;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
+.fadeInItem {
+    animation: fadeIn 1000ms ease-in-out forwards;
+}
